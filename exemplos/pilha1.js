@@ -1,4 +1,4 @@
-//Pilha Estática
+//Implementando uma Pilha Dinâmica
 
 class Pilha {
     constructor() {
