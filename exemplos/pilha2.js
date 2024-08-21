@@ -9,7 +9,7 @@ class Pilha {
     // Adiciona um elemento no topo da pilha
     push(elemento) {
         if (this.isFull()) {
-            return "A pilha está cheia"
+            return console.log("A pilha está cheia")
         }
         return this.itens.push(elemento)
     }
@@ -53,8 +53,19 @@ class Pilha {
 
 // Testando a pilha
 const pilha = new Pilha()
-pilha.push(10);  // Adiciona 10
-pilha.push(20);  // Adiciona 20
-console.log(pilha.peek())  // Retorna 20
-pilha.pop();  // Remove o 20
-console.log(pilha.tamanho())  // Retorna 1
+pilha.push(10)  // Adiciona 10
+pilha.push(20)  // Adiciona 20
+pilha.push(30)
+pilha.push(40)
+pilha.push(50)
+console.log(pilha)
+pilha.push(60)
+console.log(pilha)
+pilha.push(70)
+console.log(pilha)
+console.log(pilha.peek()) 
+pilha.pop()
+console.log(pilha)
+console.log(pilha.tamanho())
+pilha.push(60)
+console.log(pilha)
