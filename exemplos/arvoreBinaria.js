@@ -1,5 +1,13 @@
 //Exemplo de implementação de uma Árvore Binária de Busca
 
+class TreeNode {
+    constructor(value) {
+        this.value = value;  // Valor do nó
+        this.left = null;    // Filho à esquerda
+        this.right = null;   // Filho à direita
+    }
+}
+
 class BinarySearchTree {
     constructor() {
         this.root = null;  // Raiz da árvore
