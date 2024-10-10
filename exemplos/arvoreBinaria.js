@@ -68,3 +68,21 @@ class BinarySearchTree {
         }
     }
 }
+
+
+const bst = new BinarySearchTree();
+bst.insert(10);
+bst.insert(5);
+bst.insert(15);
+bst.insert(3);
+bst.insert(7);
+bst.insert(12);
+bst.insert(18);
+
+// Busca por um valor
+console.log(bst.search(7));  // true
+console.log(bst.search(20)); // false
+
+// Percorrendo a árvore em ordem
+console.log("Percurso em ordem:");
+bst.inOrderTraversal(bst.root);  // Saída: 3, 5, 7, 10, 12, 15, 18
